@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #f5f0e8; color: #3d3427; font-family: 'Inter', system-ui, sans-serif; overflow: hidden; height: 100vh; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #faf5ef; }
+::-webkit-scrollbar-thumb { background: #e5ddd0; border-radius: 2px; }
+
+@layer components {
+  .kitchen-panel { @apply bg-white border border-kitchen-border rounded-lg shadow-sm; }
+  .kitchen-header { @apply px-4 py-2 border-b border-kitchen-border flex items-center justify-between bg-kitchen-panel; }
+  .kitchen-label { @apply text-[10px] uppercase tracking-widest text-kitchen-muted font-semibold; }
+}
